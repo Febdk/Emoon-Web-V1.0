@@ -9,7 +9,7 @@ export default function Pricing() {
       period: "sekali bayar",
       description: "Cocok buat kamu yang baru mulai bisnis online",
       features: [
-        "1 Form Order Custom (Templlate Basic",
+        "1 Form Order Custom (Template Basic)",
         "Auto WhatsApp Integration",
         "Custom Warna & Logo",
         "Subdomain emoon.id/namamu",

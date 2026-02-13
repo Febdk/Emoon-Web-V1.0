@@ -33,7 +33,7 @@ export default function Features() {
   ];
 
   return (
-    <section id="fitur" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1E293B] to-[#0F172A] relative overflow-hidden">
+    <section id="fitur" className="py-16 md:py-25 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1E293B] to-[#0F172A] relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#3D3B8E]/10 rounded-full blur-3xl"></div>
@@ -42,11 +42,11 @@ export default function Features() {
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 text-white px-4">
             Fitur Unggulan
-            <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2">Yang Bikin Bisnis Makin Gampang</span>
+            <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2 px-2 text-2xl md:text-3xl lg:text-4xl leading-relaxed">Yang Bikin Bisnis Makin Gampang</span>
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-7xl mx-auto">
             Semua fitur dirancang khusus untuk pebisnis online yang pengen tampil profesional tanpa ribet
           </p>
         </div>
