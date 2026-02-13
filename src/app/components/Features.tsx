@@ -26,7 +26,7 @@ export default function Features() {
     {
       icon: <Globe className="w-8 h-8 text-white" />,
       title: "Subdomain Keren",
-      description: "Dapatkan link eksklusif: emoon.id/namamu atau custom domain sendiri!",
+      description: "Dapatkan link eksklusif: webform.id/namamu atau custom domain sendiri!",
       gradient: "from-[#667EEA] to-[#764BA2]",
       size: "wide" // Bento Grid: Wide
     }
@@ -123,7 +123,7 @@ export default function Features() {
                 </p>
               </div>
               <div className="bg-white/20 backdrop-blur rounded-lg px-6 py-3 flex-shrink-0">
-                <p className="text-white text-sm">emoon.id/tokoku</p>
+                <p className="text-white text-sm">webform.id/tokoku</p>
               </div>
             </div>
           </div>
