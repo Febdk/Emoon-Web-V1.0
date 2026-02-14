@@ -23,19 +23,19 @@ export default function Hero() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full mb-6 border border-white/20">
               <Sparkles size={16} className="text-[#FFD700]" />
-              <span className="text-sm text-white">Smart Order Form Solution</span>
+              <span className="text-sm text-white">Pilihan Terbaik Untuk mu!</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-white">
-              Tinggalkan Google Form Kaku.
-              <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2">
-                Beralih ke Smart Order Form.
+            <h1 className="text-2xl md:text-4xl lg:text-7xl mb-6 text-white">
+              Ubah  <span className="text-[#FFD700]">Chat Ruwet Dengan Clienmu</span>
+              <span className="block bg-gradient-to-r from-[#eeedeb] to-[#f3f2f0] bg-clip-text text-transparent mt-2">
+                Menjadi Simple dan Keren.
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Buat formulir order yang <span className="text-[#FFD700]">branding banget</span>, 
-              hitung otomatis, dan langsung terhubung ke WhatsApp Admin. 
+              Stop menghabisakan waktuk <span className="text-[#FFD700]">membalas pertanyan yang berulang-ulang</span>, 
+              dan buat calon clienmu semakin yakin dengan produkmu dengan form yang rapi dan profesional. 
               Tanpa coding, <span className="text-[#FFD700]">kami yang kerjakan</span>.
             </p>
 
@@ -44,14 +44,14 @@ export default function Hero() {
                 onClick={() => scrollToSection('demo')}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#3D3B8E] rounded-xl transition-all group hover:shadow-2xl hover:scale-105"
               >
-                Lihat Demo Form
+                Rasakan Eksperiencenya
                 <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
               <button
                 onClick={() => scrollToSection('harga')}
                 className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-[#1E293B] rounded-xl transition-all hover:shadow-2xl hover:scale-105"
               >
-                Pilih Paket
+                Lihat Paketnya
               </button>
             </div>
           </div>
@@ -73,8 +73,8 @@ export default function Hero() {
                 </div>
                 <div className="mt-4 text-xs text-gray-400 space-y-1">
                   <p>• Tampilan membosankan</p>
-                  <p>• Tidak ada branding</p>
-                  <p>• Hitung manual</p>
+                  <p>• Tidak ada branding yang maksimal</p>
+                  <p>• kurang fleksibel </p>
                 </div>
               </div>
 
@@ -93,9 +93,9 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="mt-4 text-xs text-white space-y-1">
-                  <p>✨ Custom branding</p>
-                  <p>✨ Auto calculate</p>
-                  <p>✨ Langsung ke WA</p>
+                  <p>✨ Custom branding sesukamu</p>
+                  <p>✨ Langsung konek ke WA admin</p>
+                  <p>✨ Konek juga ke excle</p>
                 </div>
               </div>
             </div>

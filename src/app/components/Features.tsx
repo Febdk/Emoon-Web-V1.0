@@ -1,11 +1,11 @@
-import { MessageCircle, Palette, Calculator, Globe } from 'lucide-react';
+import { MessageCircle, Palette, HardDrive, Globe } from 'lucide-react';
 
 export default function Features() {
   const features = [
     {
       icon: <MessageCircle className="w-8 h-8 text-white" />,
-      title: "Auto-WhatsApp Generator",
-      description: "Orderan langsung terformat rapi dan otomatis terkirim ke WhatsApp admin. Gak perlu copy-paste manual lagi!",
+      title: "Sekali klik, langsung kirim ke WhatsApp",
+      description: "Klien gak perlu simpan nomor. Klik Pesan, data langsung terkirim ke WA Admin dengan format rapi.",
       gradient: "from-[#25D366] to-[#128C7E]",
       size: "large" // Bento Grid: Large
     },
@@ -17,9 +17,9 @@ export default function Features() {
       size: "regular"
     },
     {
-      icon: <Calculator className="w-8 h-8 text-white" />,
-      title: "Auto Calculator",
-      description: "Hitung total harga otomatis termasuk ongkir, diskon, dan berbagai variasi produk.",
+      icon: <HardDrive className="w-8 h-8 text-white" />,
+      title: "Fitur Terhubung Dengan Pusat Data",
+      description: "Dengan mengambil paket Bisnis kamu bisa langsung termudahkan dalam mengolah data klienmu.",
       gradient: "from-[#FFD700] to-[#FFA500]",
       size: "regular"
     },
@@ -43,11 +43,11 @@ export default function Features() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 text-white px-4">
-            Fitur Unggulan
-            <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2 px-2 text-2xl md:text-3xl lg:text-4xl leading-relaxed">Yang Bikin Bisnis Makin Gampang</span>
+            Fitur Cangih
+            <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2 px-2 text-2xl md:text-3xl lg:text-4xl leading-relaxed">yang Bikin Hidup Founder Lebih Santai</span>
           </h2>
           <p className="text-lg text-gray-200 max-w-7xl mx-auto">
-            Semua fitur dirancang khusus untuk pebisnis online yang pengen tampil profesional tanpa ribet
+            Semua fitur dirancang untuk mempermudah calon klienmu dan mempermudah Admin untuk berinteraksi dengan klien.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function Features() {
           <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all hover:scale-105">
             <div className="text-3xl mb-2">⚡</div>
             <h4 className="text-lg mb-2 text-white">Tanpa Coding</h4>
-            <p className="text-gray-300 text-sm">Kamu fokus jualan, kami yang urus teknisnya</p>
+            <p className="text-gray-300 text-sm">Fokus closingin klien yang lain, kamu yang urus codingannya</p>
           </div>
           <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all hover:scale-105">
             <div className="text-3xl mb-2">📱</div>

@@ -1,23 +1,23 @@
-import { MessageSquareX, Calculator, Frown } from 'lucide-react';
+import {ClockAlert, Frown, Angry } from 'lucide-react';
 
 export default function PainSection() {
   const problems = [
     {
-      icon: <MessageSquareX className="w-12 h-12 text-red-500" />,
-      title: "Chat WA Numpuk & Berantakan",
-      description: "Pelanggan kirim orderan lewat chat pribadi, admin kewalahan nyari data yang mana, screenshot yang mana.",
+      icon: <Angry className="w-12 h-12 text-red-500" />,
+      title: "Diskusi Panjang Lebar, Closing Kagak.",
+      description: "Capek jelasin pricelist & paket berulang kali, eh ujung-ujungnya  klien cuma nanti dikabari ya kak . Waktu terbuang sia-sia.",
       gradient: "from-red-50 to-red-100"
     },
     {
-      icon: <Calculator className="w-12 h-12 text-orange-500" />,
-      title: "Admin Sering Salah Hitung Total",
-      description: "Hitung manual total harga, ongkir, diskon? Ribet! Sering ada kesalahan yang bikin rugi atau komplain customer.",
+      icon: <ClockAlert className="w-12 h-12 text-orange-500" />,
+      title: "Buat calon klien kamu ribet",
+      description: "FYI sebenarnya calon klien itu mersa dipersulit loh kalau kamu kirim formulir dengan menggunakan chta WA manual, klienmu  harus copas manual data yang Admin kirim dan ngirim lagi ke Admin.",
       gradient: "from-orange-50 to-orange-100"
     },
     {
       icon: <Frown className="w-12 h-12 text-yellow-600" />,
-      title: "Tampilan Form Bawaan Membosankan",
-      description: "Google Form? Typeform? Tampilannya gitu-gitu aja. Gak ada branding, gak profesional, customer jadi males order.",
+      title: "Klien ragu karena tampilan tidak Pro",
+      description: "Google Form? Typeform? Tampilannya gitu-gitu aja. Gak ada branding, gak profesional, customer jadi ragudeh kalaumau  order.",
       gradient: "from-yellow-50 to-yellow-100"
     }
   ];
@@ -30,14 +30,13 @@ export default function PainSection() {
         <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#FFD700]/10 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-11">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 text-white">
-            Masalah yang Sering Dialami
-            <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2">Pebisnis</span>
+            Sering Mengalami Drama Admin Seperti Ini kan?
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Kamu pasti pernah ngalamin salah satu (atau bahkan semua) masalah ini:
+            <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2">Mana nih masalah yang sering kalian alami, pasti pernah kan salah satu, atau malah semua?</span> 
           </p>
         </div>
 
@@ -62,7 +61,7 @@ export default function PainSection() {
 
         <div className="text-center mt-12">
           <p className="text-xl md:text-2xl text-white">
-            Tenang, <span className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent">Emoon</span> punya solusinya! 🚀
+            Tapi Tenang, <span className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent">Emoon</span> punya solusinya! 🚀
           </p>
         </div>
       </div>
