@@ -27,7 +27,7 @@ export default function Hero() {
             </div>
             
             <h1 className="text-2xl md:text-4xl lg:text-7xl mb-6 text-white">
-              Ubah  <span className="text-[#FFD700]">Chat Ruwet Dengan Clienmu</span>
+              Ubah  <span className="text-[#FFD700]">Chat Ruwet Dengan Klienmu</span>
               <span className="block bg-gradient-to-r from-[#eeedeb] to-[#f3f2f0] bg-clip-text text-transparent mt-2">
                 Menjadi Simple dan Keren.
               </span>
@@ -35,7 +35,7 @@ export default function Hero() {
             
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
               Stop menghabisakan waktuk <span className="text-[#FFD700]">membalas pertanyan yang berulang-ulang</span>, 
-              dan buat calon clienmu semakin yakin dengan produkmu dengan form yang rapi dan profesional. 
+              dan buat calon klien semakin yakin dengan produkmu dengan form yang rapi dan profesional. 
               Tanpa coding, <span className="text-[#FFD700]">kami yang kerjakan</span>.
             </p>
 
