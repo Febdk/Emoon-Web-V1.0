@@ -64,8 +64,8 @@ export default function Hero() {
               </button>
             </div>
           </div>
-
-          {/* Right Visual - Professional Comparison with Image Support */}
+        
+          {/* Right Visual - Professional with Image Support */}
           <div className="relative group">
             {/* Background Glow */}
             <div className="absolute -inset-4 bg-gradient-to-r from-[#3D3B8E]/30 to-[#FFD700]/10 rounded-[2rem] blur-2xl group-hover:opacity-75 transition duration-1000"></div>
