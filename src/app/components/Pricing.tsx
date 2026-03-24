@@ -3,7 +3,7 @@ import { Check, Star, Sparkles } from "lucide-react";
 export default function Pricing() {
   const packages = [
     {
-      name: "Starter",
+      name: "Business",
       subtitle: "Untuk Pemula",
       price: "150K",
       period: "sekali bayar",
@@ -19,7 +19,7 @@ export default function Pricing() {
         "bg-gradient-to-r from-[#3D3B8E] to-[#5D5BAE] hover:from-[#2D2B6E] hover:to-[#4D4B9E] text-white",
     },
     {
-      name: "Business",
+      name: "Exclusive",
       subtitle: "Paling Laris 🔥",
       price: "250K",
       period: "sekali bayar",
