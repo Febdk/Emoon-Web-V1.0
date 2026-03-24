@@ -1,56 +1,66 @@
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="relative pt-24 md:pt-32 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#334155]">
+    <section
+      id="home"
+      className="relative pt-24 md:pt-32 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#334155]"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-[#3D3B8E]/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-[#FFD700]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div
+          className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-[#FFD700]/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#3D3B8E]/10 to-[#5D5BAE]/10 rounded-full blur-3xl"></div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full mb-6 border border-white/20">
-              <span className="text-sm text-white">Pilihan Terbaik Untuk mu!</span>
+              <span className="text-sm text-white">
+                Pilihan Terbaik Untuk mu!
+              </span>
             </div>
-            
+
             <h1 className="text-2xl md:text-4xl lg:text-7xl mb-6 text-white">
-              Ubah  <span className="text-[#FFD700]">Chat Ruwet Dengan Klienmu</span>
+              Ubah{" "}
+              <span className="text-[#FFD700]">Chat Ruwet Dengan Klienmu</span>
               <span className="block bg-gradient-to-r from-[#eeedeb] to-[#f3f2f0] bg-clip-text text-transparent mt-2">
                 Menjadi Simple dan Keren.
               </span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Stop menghabisakan waktuk <span className="text-[#FFD700]">membalas pertanyan yang berulang-ulang</span>, 
-              dan buat calon klien semakin yakin dengan produkmu dengan form yang rapi dan profesional. 
-              Tanpa coding, <span className="text-[#FFD700]">kami yang kerjakan</span>.
+              Stop menghabisakan waktuk{" "}
+              <span className="text-[#FFD700]">
+                membalas pertanyan yang berulang-ulang
+              </span>
+              , dan buat calon klien semakin yakin dengan produkmu dengan form
+              yang rapi dan profesional. Tanpa coding,{" "}
+              <span className="text-[#FFD700]">kami yang kerjakan</span>.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
-                onClick={() => scrollToSection('demo')}
+                onClick={() => scrollToSection("harga")}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#3D3B8E] rounded-xl transition-all group hover:shadow-2xl hover:scale-105"
               >
-                Rasakan Eksperiencenya
-                <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button
-                onClick={() => scrollToSection('harga')}
-                className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-[#1E293B] rounded-xl transition-all hover:shadow-2xl hover:scale-105"
-              >
                 Lihat Paketnya
+                <ArrowRight
+                  size={20}
+                  className="ml-2 group-hover:translate-x-1 transition-transform"
+                />
               </button>
             </div>
           </div>
