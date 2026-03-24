@@ -82,12 +82,12 @@ export default function Footer() {
                 <button
                   onClick={() =>
                     document
-                      .getElementById("demo")
+                      .getElementById("galery")
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
                   className="text-gray-400 hover:text-[#FFD700] transition-colors"
                 >
-                  Demo
+                  Galery
                 </button>
               </li>
             </ul>
