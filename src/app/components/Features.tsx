@@ -1,4 +1,4 @@
-import { MessageCircle, Palette, HardDrive, Globe } from 'lucide-react';
+import { MessageCircle, Palette, HardDrive, Globe, Zap, Smartphone, SquareCode  } from 'lucide-react';
 
 export default function Features() {
   const features = [
@@ -132,17 +132,23 @@ export default function Features() {
         {/* Additional Benefits */}
         <div className="mt-12 grid md:grid-cols-3 gap-6 text-center">
           <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all hover:scale-105">
-            <div className="text-3xl mb-2">⚡</div>
+            <div className="text-3xl mb-2 grid place-items-center">
+              <SquareCode className="w-8 h-8 text-white" />
+            </div>
             <h4 className="text-lg mb-2 text-white">Tanpa Coding</h4>
             <p className="text-gray-300 text-sm">Fokus closingin klien yang lain, kamu yang urus codingannya</p>
           </div>
           <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all hover:scale-105">
-            <div className="text-3xl mb-2">📱</div>
+            <div className="text-3xl mb-2 grid place-items-center">
+              <Smartphone className="w-8 h-8 text-white" />
+            </div>
             <h4 className="text-lg mb-2 text-white">Mobile Friendly</h4>
             <p className="text-gray-300 text-sm">90% pelanggan order dari HP, kami tau itu!</p>
           </div>
           <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all hover:scale-105">
-            <div className="text-3xl mb-2">🚀</div>
+            <div className="text-3xl mb-2 grid place-items-center">
+              <Zap className="w-8 h-8 text-white" />
+            </div>
             <h4 className="text-lg mb-2 text-white">Fast Support</h4>
             <p className="text-gray-300 text-sm">Ada masalah? Chat WA langsung dibalas!</p>
           </div>

@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import logo from '@/assets/cb512b6998e6dcdac75c0af596d6f883a0f246e1.png';
+import logo from '@/assets/e-moon-store.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,10 +46,10 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3D3B8E] group-hover:w-full transition-all"></span>
             </button>
             <button 
-              onClick={() => scrollToSection('demo')}
+              onClick={() => scrollToSection('galery')}
               className="text-gray-700 hover:text-[#3D3B8E] transition-colors relative group"
             >
-              Demo
+              Galery
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3D3B8E] group-hover:w-full transition-all"></span>
             </button>
           </div>
@@ -97,10 +97,10 @@ export default function Navbar() {
               Harga
             </button>
             <button 
-              onClick={() => scrollToSection('demo')}
+              onClick={() => scrollToSection('galery')}
               className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg"
             >
-              Demo
+              Galery
             </button>
             <a
               href="https://wa.me/6285291619898?text=Halo%20Emoon,%20saya%20ingin%20konsultasi"

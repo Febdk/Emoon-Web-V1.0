@@ -1,5 +1,5 @@
 import { Instagram, Send } from "lucide-react";
-import logo from "@/assets/cb512b6998e6dcdac75c0af596d6f883a0f246e1.png";
+import logo from "@/assets/e-moon-store.png";
 
 export default function Footer() {
   return (

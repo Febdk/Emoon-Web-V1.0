@@ -5,7 +5,7 @@ export default function Pricing() {
     {
       name: "Starter",
       subtitle: "Untuk Pemula",
-      price: "95K",
+      price: "150K",
       period: "sekali bayar",
       description: "Cocok buat kamu yang baru mulai bisnis online",
       features: [
@@ -13,7 +13,6 @@ export default function Pricing() {
         "Auto WhatsApp Integration",
         "Custom Warna & Logo",
         "Subdomain emoon.id/namamu",
-        "Free Update 3 Bulan",
       ],
       popular: false,
       buttonColor:
@@ -22,19 +21,14 @@ export default function Pricing() {
     {
       name: "Business",
       subtitle: "Paling Laris 🔥",
-      price: "150K",
+      price: "250K",
       period: "sekali bayar",
       description:
         "Best seller! Untuk bisnis yang sudah jalan dan pengen scale up",
       features: [
-        "Semi-Custom Design",
         "Auto WhatsApp Integration",
         "Full Custom Design",
-        "Analytics Dashboard",
-        "Free Update 6 Bulan",
         "Priority Support 24/7",
-        "Bonus: Template Promosi",
-        "Bisa Tambah Katalog Produk",
         "Fitur Hitung Otomatis",
       ],
       popular: true,
@@ -155,31 +149,6 @@ export default function Pricing() {
           >
             Chat Admin Sekarang
           </a>
-        </div>
-
-        {/* Benefits Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
-            <div className="text-3xl mb-3">✅</div>
-            <h4 className="text-white font-semibold mb-1">Garansi Revisi</h4>
-            <p className="text-gray-400 text-sm">
-              Sampai kamu puas dengan hasilnya
-            </p>
-          </div>
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
-            <div className="text-3xl mb-3">⚡</div>
-            <h4 className="text-white font-semibold mb-1">Pengerjaan Cepat</h4>
-            <p className="text-gray-400 text-sm">
-              3-5 hari kerja langsung tayang
-            </p>
-          </div>
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
-            <div className="text-3xl mb-3">🎓</div>
-            <h4 className="text-white font-semibold mb-1">Tutorial Lengkap</h4>
-            <p className="text-gray-400 text-sm">
-              Panduan video cara penggunaan
-            </p>
-          </div>
         </div>
       </div>
     </section>

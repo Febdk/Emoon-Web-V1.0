@@ -22,7 +22,6 @@ export default function Hero() {
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full mb-6 border border-white/20">
-              <Sparkles size={16} className="text-[#FFD700]" />
               <span className="text-sm text-white">Pilihan Terbaik Untuk mu!</span>
             </div>
             

@@ -1,172 +1,145 @@
-import { useState } from 'react';
-import { ShoppingBag, Send, CheckCircle2 } from 'lucide-react';
+import React, { useState } from 'react';
+import { ExternalLink, Heart, Layout, CheckCircle2 } from 'lucide-react';
 
-export default function SolutionDemo() {
-  const [formData, setFormData] = useState({
-    name: '',
-    product: '',
-    quantity: 1,
-    address: ''
-  });
+export default function PortfolioGallery() {
+  const [activeCategory, setActiveCategory] = useState('Semua');
 
-  const products = [
-    { name: 'Sepatu Running', price: 450000 },
-    { name: 'Tas Backpack', price: 280000 },
-    { name: 'Kaos Premium', price: 150000 },
-    { name: 'Jaket Hoodie', price: 350000 }
+  // Data kategori
+  const categories = ['Semua', 'Studio Foto', 'Fotografer', 'Media Creative', 'MUA'];
+
+  // Data Mock Portofolio
+  const portfolioItems = [
+    {
+      id: 1,
+      title: 'Kagumi.Studio',
+      category: 'Studio Foto',
+      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop',
+      link: 'https://formulironline.permatawedding.online/boking-studio-foto'
+    },
+    {
+      id: 2,
+      title: 'Permata-Makeup',
+      category: 'MUA',
+      image: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop',
+      link: 'https://formulironline.permatawedding.online/permata-mackup'
+    },
+    {
+      id: 3,
+      title: 'Permata Photography',
+      category: 'Fotografer',
+      image: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=800&auto=format&fit=crop',
+      link: 'https://formulironline.permatawedding.online/permata-photography'
+    }
   ];
 
-  const selectedProduct = products.find(p => p.name === formData.product);
-  const total = selectedProduct ? selectedProduct.price * formData.quantity : 0;
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.product || !formData.address) {
-      alert('Mohon lengkapi semua data!');
-      return;
-    }
-
-    const message = `Halo! Saya mau order:\n\n*Nama:* ${formData.name}\n*Produk:* ${formData.product}\n*Jumlah:* ${formData.quantity}\n*Total:* Rp ${total.toLocaleString('id-ID')}\n*Alamat:* ${formData.address}\n\nTerima kasih! 🙏`;
-    
-    const whatsappUrl = `https://wa.me/6285291619898?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
+  const filteredItems = activeCategory === 'Semua' 
+    ? portfolioItems 
+    : portfolioItems.filter(item => item.category === activeCategory);
 
   return (
-    <section id="demo" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#1E293B] relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#3D3B8E]/20 to-[#5D5BAE]/20 rounded-full blur-3xl"></div>
+    <section id='galery' className="py-20 px-4 min-h-screen bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#1E293B] relative overflow-hidden">
+      {/* Background Glow Effect */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#3D3B8E]/10 rounded-full blur-[120px]"></div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
+        
+        {/* Header Section */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full mb-4 border border-white/20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full mb-6 border border-white/20">
             <CheckCircle2 size={16} className="text-[#FFD700]" />
-            <span className="text-sm text-white">Live Interactive Demo</span>
+            <span className="text-xs font-medium text-white uppercase tracking-wider">Portfolio Kami</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 text-white">
-            Coba Klik & Rasakan 
-            <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2">Bedanya! ✨</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            Galeri Hasil 
+            <span className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent ml-3">Karya</span>
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Ini contoh form buatan Emoon. Isi datanya dan lihat hasilnya langsung terkirim ke WhatsApp!
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+            Lihat koleksi form order terbaik yang telah kami buat. 
+            Klik pada kartu untuk melihat demo langsung.
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-gradient-to-br from-[#3D3B8E] to-[#5D5BAE] rounded-3xl p-1 shadow-2xl">
-            <div className="bg-white rounded-[22px] p-8 md:p-10">
-              {/* Header Form */}
-              <div className="text-center mb-8">
-                <div className="w-16 h-16 bg-[#FFD700] rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <ShoppingBag className="w-8 h-8 text-[#3D3B8E]" />
-                </div>
-                <h3 className="text-2xl text-[#3D3B8E] mb-2">
-                  Form Order Toko Kamu
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-3 mb-16">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-8 py-3 rounded-xl transition-all duration-300 font-semibold border-2 ${
+                activeCategory === cat
+                  ? 'bg-gradient-to-r from-[#FFD700] to-[#FFA500] border-transparent text-[#1E293B] shadow-lg shadow-yellow-500/20 scale-105'
+                  : 'bg-white/5 border-white/10 text-white hover:bg-white/10 hover:border-white/30'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        {/* Portfolio Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredItems.map((item) => (
+            <div 
+              key={item.id}
+              className="group relative overflow-hidden rounded-3xl bg-[#1E293B] border border-white/10 aspect-[4/3] cursor-pointer shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-[#FFD700]/50"
+              onClick={() => window.open(item.link, '_blank')}
+            >
+              {/* Image */}
+              <img 
+                src={item.image} 
+                alt={item.title}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-80"
+                onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/800x600?text=Portofolio' }}
+              />
+
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-80"></div>
+
+              {/* Content Overlay */}
+              <div className="absolute inset-0 flex flex-col items-center justify-end p-8 text-center text-white">
+                <span className="text-[10px] uppercase tracking-[0.2em] mb-2 text-[#FFD700] font-bold">
+                  {item.category}
+                </span>
+                
+                <h3 className="text-2xl font-bold mb-6 group-hover:text-[#FFD700] transition-colors">
+                  {item.title}
                 </h3>
-                <p className="text-gray-600">Isi data dengan lengkap ya! 😊</p>
+
+                <div className="transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                  <button className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-[#1E293B] px-6 py-2.5 rounded-xl flex items-center gap-2 font-bold shadow-xl hover:brightness-110">
+                    Lihat Demo
+                    <ExternalLink size={18} />
+                  </button>
+                </div>
               </div>
 
-              {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm mb-2 text-gray-700">
-                    Nama Lengkap
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="Masukkan nama kamu"
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#3D3B8E] focus:outline-none transition-colors focus:ring-4 focus:ring-[#3D3B8E]/10"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm mb-2 text-gray-700">
-                    Pilih Produk
-                  </label>
-                  <select
-                    value={formData.product}
-                    onChange={(e) => setFormData({ ...formData, product: e.target.value })}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#3D3B8E] focus:outline-none transition-colors focus:ring-4 focus:ring-[#3D3B8E]/10"
-                  >
-                    <option value="">-- Pilih Produk --</option>
-                    {products.map((product) => (
-                      <option key={product.name} value={product.name}>
-                        {product.name} - Rp {product.price.toLocaleString('id-ID')}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm mb-2 text-gray-700">
-                    Jumlah
-                  </label>
-                  <input
-                    type="number"
-                    min="1"
-                    value={formData.quantity}
-                    onChange={(e) => setFormData({ ...formData, quantity: parseInt(e.target.value) || 1 })}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#3D3B8E] focus:outline-none transition-colors focus:ring-4 focus:ring-[#3D3B8E]/10"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm mb-2 text-gray-700">
-                    Alamat Pengiriman
-                  </label>
-                  <textarea
-                    value={formData.address}
-                    onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                    placeholder="Tulis alamat lengkap"
-                    rows={3}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-[#3D3B8E] focus:outline-none transition-colors resize-none focus:ring-4 focus:ring-[#3D3B8E]/10"
-                  />
-                </div>
-
-                {/* Total Price */}
-                {selectedProduct && (
-                  <div className="bg-gradient-to-r from-[#3D3B8E]/10 to-[#5D5BAE]/10 rounded-xl p-4 border-2 border-[#3D3B8E]/20">
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600">Total Pembayaran:</span>
-                      <span className="text-2xl bg-gradient-to-r from-[#3D3B8E] to-[#5D5BAE] bg-clip-text text-transparent">
-                        Rp {total.toLocaleString('id-ID')}
-                      </span>
-                    </div>
-                  </div>
-                )}
-
-                {/* Submit Button */}
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFC700] hover:to-[#FF8C00] text-[#1E293B] py-4 rounded-xl transition-all flex items-center justify-center gap-2 group shadow-lg hover:shadow-2xl hover:scale-105"
-                >
-                  <Send size={20} className="group-hover:translate-x-1 transition-transform" />
-                  Kirim Order ke WhatsApp
-                </button>
-              </form>
-
-              {/* Footer Note */}
-              <div className="mt-6 text-center">
-                <p className="text-sm text-gray-500">
-                  🔒 Data kamu aman & langsung ke admin
-                </p>
+              {/* Top Right Decoration */}
+              <div className="absolute top-6 right-6 text-white/30 group-hover:text-[#FFD700] transition-colors">
+                <Heart size={20} />
               </div>
             </div>
-          </div>
-
-          {/* Info Box */}
-          <div className="mt-8 bg-white/5 backdrop-blur-md border-2 border-[#FFD700]/30 rounded-2xl p-6 text-center">
-            <p className="text-white">
-              <span className="text-xl">✨</span> Ini baru contoh! Form kamu bisa lebih keren lagi dengan branding sendiri, warna custom, dan fitur tambahan sesuai kebutuhan.
-            </p>
-          </div>
+          ))}
         </div>
+
+        {/* Empty State */}
+        {filteredItems.length === 0 && (
+          <div className="text-center py-24 bg-white/5 backdrop-blur-sm rounded-[2.5rem] border-2 border-dashed border-white/10">
+            <Layout className="mx-auto text-gray-500 mb-4" size={48} />
+            <p className="text-gray-400 text-lg">Belum ada hasil karya di kategori ini.</p>
+          </div>
+        )}
+
+        {/* Footer Info Box */}
+        <div className="mt-16 bg-white/5 backdrop-blur-md border border-[#FFD700]/30 rounded-3xl p-8 text-center max-w-3xl mx-auto">
+          <p className="text-white/80 text-lg">
+            Ingin memiliki website pernikahan seperti contoh di atas? 
+            <span className="block mt-2 font-bold text-[#FFD700]">Hubungi admin kami untuk konsultasi gratis!</span>
+          </p>
+        </div>
+
       </div>
     </section>
   );

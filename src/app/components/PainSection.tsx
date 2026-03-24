@@ -61,7 +61,7 @@ export default function PainSection() {
 
         <div className="text-center mt-12">
           <p className="text-xl md:text-2xl text-white">
-            Tapi Tenang, <span className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent">Emoon</span> punya solusinya! 🚀
+            Tapi Tenang, <span className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent">Emoon</span> punya solusinya!
           </p>
         </div>
       </div>
