@@ -1,8 +1,10 @@
-import { Check, Star, Sparkles } from "lucide-react";
+import { Check, Star, Sparkles, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom"; // Import ntuk memangil untuk memangil dari App file
 
 export default function Pricing() {
   const packages = [
     {
+      id: "business",
       name: "Business",
       subtitle: "Untuk Pemula",
       price: "150K",
@@ -19,6 +21,7 @@ export default function Pricing() {
         "bg-gradient-to-r from-[#3D3B8E] to-[#5D5BAE] hover:from-[#2D2B6E] hover:to-[#4D4B9E] text-white",
     },
     {
+      id: "exclusive",
       name: "Exclusive",
       subtitle: "Paling Laris 🔥",
       price: "250K",
@@ -118,15 +121,30 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              {/* CTA Button */}
-              <a
-                href={`https://wa.me/6285291619898?text=Halo%20Emoon,%20saya%20tertarik%20dengan%20paket%20${pkg.name}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`block w-full py-4 rounded-xl text-center font-bold transition-all ${pkg.buttonColor} shadow-lg hover:shadow-2xl active:scale-95`}
-              >
-                Pilih Paket {pkg.name}
-              </a>
+              {/* Buttons Area */}
+              <div className="space-y-3">
+                {/* Primary CTA Button*/}
+                <a
+                  href={`https://wa.me/6285291619898?text=Halo%20Emoon,%20saya%20tertarik%20dengan%20paket%20${pkg.name}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block w-full py-4 rounded-xl text-center font-bold transition-all ${pkg.buttonColor} shadow-lg hover:shadow-2xl active:scale-95`}
+                >
+                  Pilih Paket {pkg.name}
+                </a>
+
+                {/* Tombol Langsung Pesan */}
+                <Link
+                  to="/OrderForm"
+                  className={`group w-full py-4 rounded-xl text-center font-bold transition-all flex items-center justify-center gap-2 active:scale-95 ${pkg.buttonColor}`}
+                >
+                  <ShoppingCart
+                    size={18}
+                    className="transition-transform group-hover:scale-110"
+                  />
+                  Langsung Pesan
+                </Link>
+              </div>
             </div>
           ))}
         </div>

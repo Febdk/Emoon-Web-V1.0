@@ -83,8 +83,7 @@ export default function App() {
                     }}
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-slate-800/20">
-                    <span className="text-slate-500 text-[10px] italic text-center px-4">
-                    </span>
+                    <span className="text-slate-500 text-[10px] italic text-center px-4"></span>
                   </div>
                 </div>
                 <div className="space-y-2 px-1 text-left">
