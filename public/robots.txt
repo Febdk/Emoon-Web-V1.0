@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Arahkan ke sitemap jika lo sudah buat (opsional)
+# Sitemap: https://domainlo.com/sitemap.xml
