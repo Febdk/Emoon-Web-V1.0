@@ -75,7 +75,7 @@ export default function App() {
                 <div className="aspect-[3/4] bg-slate-900 rounded-2xl border border-white/5 mb-5 overflow-hidden relative shadow-inner">
                   {/* Gunakan string path langsung untuk menghindari error build jika file tidak ditemukan saat kompilasi */}
                   <img
-                    src="/assets/sample-ss-biasa.png"
+                    src="/assets/sample-ss-biasa.avif"
                     alt="Form Biasa"
                     className="absolute inset-0 w-full h-full object-cover object-top grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
                     onError={(e) => {
@@ -110,7 +110,7 @@ export default function App() {
                 </div>
                 <div className="aspect-[3/4] bg-[#2D2B7E] rounded-2xl border border-white/20 mb-5 overflow-hidden shadow-2xl relative">
                   <img
-                    src="/assets/sample-ss-emoon.png"
+                    src="/assets/sample-ss-emoon.avif"
                     alt="Form Emoon"
                     className="absolute inset-0 w-full h-full object-cover object-top z-10 transition-all duration-700"
                     onError={(e) => {
