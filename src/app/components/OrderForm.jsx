@@ -20,7 +20,7 @@ import {
 const ADMIN_WHATSAPP = "6285291619898"; // Nomor Admin Emoon Store
 const PRIMARY_COLOR = "#3D3B8E"; // Warna Dominan
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwgGz8ESLvB35e4MvXUXdMyIyLOz3v8s7v7O8Bo5EUzxfXJSAV2h8USV57sNJPMYnyY/exec"; //link api shet
+  "hhttps://script.google.com/macros/s/AKfycbwgGz8ESLvB35e4MvXUXdMyIyLOz3v8s7v7O8Bo5EUzxfXJSAV2h8USV57sNJPMYnyY/exec"; //link api shet
 
 const OrderForm = () => {
   const navigate = useNavigate();
