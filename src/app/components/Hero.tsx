@@ -87,9 +87,9 @@ export default function App() {
                   </div>
                 </div>
                 <div className="space-y-2 px-1 text-left">
-                  <h3 className="text-white font-semibold text-sm">
-                    • Tampilan membosankan
-                  </h3>
+                  <h2 className="text-white font-semibold text-sm">
+                      Tampilan membosankan
+                  </h2>
                   <p className="text-[11px] text-gray-400 leading-relaxed">
                     • Tidak ada branding maksimal
                     <br />• kurang fleksibel
@@ -124,9 +124,9 @@ export default function App() {
                   </div>
                 </div>
                 <div className="space-y-2 px-1 text-left">
-                  <h3 className="text-[#FFD700] font-bold text-sm">
-                    ✨ Custom branding sesukamu
-                  </h3>
+                  <h2 className="text-[#FFD700] font-bold text-sm">
+                      Custom branding sesukamu
+                  </h2>
                   <p className="text-[11px] text-blue-50 opacity-90 leading-relaxed">
                     ✨ Langsung konek WA admin
                     <br />✨ Konek juga ke excle
