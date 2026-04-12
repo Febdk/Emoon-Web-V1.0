@@ -11,27 +11,27 @@ export default function PortfolioGallery() {
   const portfolioItems = [
     {
       id: 1,
-      title: "Kagumi.Studio",
+      title: "Demo.Studio",
       category: "Studio Foto",
       image:
         "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop",
-      link: "https://formulironline.permatawedding.online/boking-studio-foto",
+      link: "https://eformku.id/sample-boking-studio",
     },
     {
       id: 2,
-      title: "Permata-Makeup",
+      title: "Demo.MUA",
       category: "MUA",
       image:
         "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop",
-      link: "https://formulironline.permatawedding.online/permata-mackup",
+      link: "https://eformku.id/mua-demo",
     },
     {
       id: 3,
-      title: "Permata Photography",
+      title: "Demo.Photography",
       category: "Fotografer",
       image:
         "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=800&auto=format&fit=crop",
-      link: "https://formulironline.permatawedding.online/permata-photography",
+      link: "https://eformku.id/permata-foto",
     },
   ];
 
