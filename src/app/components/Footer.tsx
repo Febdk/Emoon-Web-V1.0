@@ -1,11 +1,12 @@
 import { Instagram, Send } from "lucide-react";
+import { Link } from "react-router-dom"; // Import Link untuk navigasi
 import logo from "@/assets/e-moon-store.png";
 
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#0F172A] to-[#020617] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-4 gap-8 mb-12 text-left">
           {/* Brand Column */}
           <div className="md:col-span-2">
             <img
@@ -13,14 +14,14 @@ export default function Footer() {
               alt="Emoon Logo"
               className="h-12 mb-4 brightness-0 invert"
             />
-            <p className="text-gray-400 mb-4 max-w-md">
+            <p className="text-gray-400 mb-4 max-w-md text-sm">
               Solusi smart order form untuk pebisnis online. Buat formulir order
               yang profesional, custom branding, dan langsung terhubung ke
               WhatsApp.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/emoon_store.id?igsh=cjJyaWNya3R0aDVv&utm_source=qr"
+                href="https://www.instagram.com/emoon.eformku/?__pwa=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-gradient-to-r hover:from-[#FFD700] hover:to-[#FFA500] rounded-lg flex items-center justify-center transition-all hover:scale-110"
@@ -28,7 +29,7 @@ export default function Footer() {
                 <Instagram size={20} />
               </a>
               <a
-                href=""
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-gradient-to-r hover:from-[#FFD700] hover:to-[#FFA500] rounded-lg flex items-center justify-center transition-all hover:scale-110"
@@ -40,7 +41,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg mb-4 text-white">Quick Links</h4>
+            <h4 className="text-lg mb-4 text-white font-bold">Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <button
@@ -49,7 +50,7 @@ export default function Footer() {
                       .getElementById("home")
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
-                  className="text-gray-400 hover:text-[#FFD700] transition-colors"
+                  className="text-gray-400 hover:text-[#FFD700] transition-colors text-sm"
                 >
                   Home
                 </button>
@@ -61,7 +62,7 @@ export default function Footer() {
                       .getElementById("fitur")
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
-                  className="text-gray-400 hover:text-[#FFD700] transition-colors"
+                  className="text-gray-400 hover:text-[#FFD700] transition-colors text-sm"
                 >
                   Fitur
                 </button>
@@ -73,21 +74,9 @@ export default function Footer() {
                       .getElementById("harga")
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
-                  className="text-gray-400 hover:text-[#FFD700] transition-colors"
+                  className="text-gray-400 hover:text-[#FFD700] transition-colors text-sm"
                 >
                   Harga
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() =>
-                    document
-                      .getElementById("galery")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="text-gray-400 hover:text-[#FFD700] transition-colors"
-                >
-                  Galery
                 </button>
               </li>
             </ul>
@@ -95,8 +84,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg mb-4 text-white">Hubungi Kami</h4>
-            <ul className="space-y-2 text-gray-400">
+            <h4 className="text-lg mb-4 text-white font-bold">Hubungi Kami</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <a
                   href="https://wa.me/6285291619898"
@@ -116,7 +105,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="pt-2">
-                <span className="text-sm text-gray-500">
+                <span className="text-sm text-gray-500 italic">
                   Managed by @permata.foto
                 </span>
               </li>
@@ -125,24 +114,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
+        <div className="border-t border-white/9 pt-9">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-m">
+            <p className="text-gray-500">
               © 2026 Emoon Store. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm">
-              <a
-                href="#terms"
-                className="text-gray-500 hover:text-[#FFD700] transition-colors"
-              >
-                Terms & Conditions
-              </a>
-              <a
-                href="#privacy"
-                className="text-gray-500 hover:text-[#FFD700] transition-colors"
+            <div className="flex gap-7">
+              {/* DI SINI LINKNYA, BOS */}
+              <Link
+                to="/privacy-policy"
+                className="text-gray-500 hover:text-[#FFD700] transition-colors uppercase font-bold tracking-widest"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react"; // import lazy & Suspense
+import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -7,27 +7,26 @@ import SolutionDemo from "./components/SolutionDemo";
 import Features from "./components/Features";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 const OrderForm = lazy(() => import("./components/OrderForm"));
 
-// Komponen untuk menampung Landing Page asli
 const Home = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       <main>
-        <Hero />
-        <PainSection />
+        <section id="home"><Hero /></section>
+        <section id="fitur"><PainSection /></section>
         <SolutionDemo />
         <Features />
-        <Pricing />
+        <section id="harga"><Pricing /></section>
       </main>
       <Footer />
     </div>
   );
 };
 
-// 3. Bungkus Routes dengan Suspense
 export default function App() {
   return (
     <Suspense
@@ -40,11 +39,14 @@ export default function App() {
       }
     >
       <Routes>
-        {/* Halaman Utama / Landing Page */}
+        {/* Rute Halaman Utama */}
         <Route path="/" element={<Home />} />
 
-        {/* Halaman Form Order */}
+        {/* Rute Form Order */}
         <Route path="/OrderForm" element={<OrderForm />} />
+
+        {/* Rute Privacy Policy Baru */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Suspense>
   );
