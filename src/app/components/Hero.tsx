@@ -119,7 +119,7 @@ export default function App() {
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-[#3D3B8E]">
                     <span className="text-blue-300 text-[10px] italic text-center px-4 font-medium">
-                      Upload Gambar Form Emoon ke folder /public/assets/
+                      .
                     </span>
                   </div>
                 </div>
