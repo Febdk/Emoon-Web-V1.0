@@ -13,24 +13,21 @@ export default function PortfolioGallery() {
       id: 1,
       title: "Demo.Studio",
       category: "Studio Foto",
-      image:
-        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop",
+      image: "/assets/jasa-form-order-fstudio.avif",
       link: "https://eformku.id/sample-boking-studio",
     },
     {
       id: 2,
       title: "Demo.MUA",
       category: "MUA",
-      image:
-        "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop",
-      link: "https://eformku.id/mua-demo",
+      image: "/assets/jasa-form-order-fmua.avif",
+      link: "https://eformku.id/mua-demo.avif",
     },
     {
       id: 3,
       title: "Demo.Photography",
       category: "Fotografer",
-      image:
-        "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=800&auto=format&fit=crop",
+      image: "/assets/jasa-form-order-ffotogr.avif",
       link: "https://eformku.id/permata-foto",
     },
   ];
