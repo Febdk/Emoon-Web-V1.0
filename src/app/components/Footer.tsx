@@ -79,6 +79,18 @@ export default function Footer() {
                   Harga
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() =>
+                    document
+                      .getElementById("galery")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="text-gray-400 hover:text-[#FFD700] transition-colors text-sm"
+                >
+                  Galery
+                </button>
+              </li>
             </ul>
           </div>
 
