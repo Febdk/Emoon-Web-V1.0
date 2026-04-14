@@ -147,7 +147,7 @@ export default function PortfolioGallery() {
         {/* Footer Info Box */}
         <div className="mt-16 bg-white/5 backdrop-blur-md border border-[#FFD700]/30 rounded-3xl p-8 text-center max-w-3xl mx-auto">
           <p className="text-white/80 text-lg">
-            Ingin memiliki website pernikahan seperti contoh di atas?
+            Ingin memiliki landing page form order sekelas ini untuk bisnismu?
             <span className="block mt-2 font-bold text-[#FFD700]">
               Hubungi admin kami untuk konsultasi gratis!
             </span>

@@ -123,7 +123,7 @@ export default function Features() {
                 </p>
               </div>
               <div className="bg-white/20 backdrop-blur rounded-lg px-6 py-3 flex-shrink-0">
-                <p className="text-white text-sm">webform.id/tokoku</p>
+                <p className="text-white text-sm">eformku.id/tokomu</p>
               </div>
             </div>
           </div>
