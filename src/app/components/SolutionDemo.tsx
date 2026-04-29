@@ -21,7 +21,7 @@ export default function PortfolioGallery() {
       title: "Demo.MUA",
       category: "MUA",
       image: "/assets/jasa-form-order-fmua.avif",
-      link: "https://eformku.id/mua-demo.avif",
+      link: "https://eformku.id/mua-demo",
     },
     {
       id: 3,
