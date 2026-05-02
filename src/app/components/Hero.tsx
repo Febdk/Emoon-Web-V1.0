@@ -1,6 +1,6 @@
 import { ArrowRight, Sparkles, XCircle, CheckCircle2, Zap } from "lucide-react";
 
-export default function App() {
+export default function Hero() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {

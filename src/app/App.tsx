@@ -16,11 +16,22 @@ const Home = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <main>
-        <section id="home"><Hero /></section>
-        <section id="fitur"><PainSection /></section>
+        {/* id="home" di sini karena Hero tidak punya id internalnya sendiri */}
+        <section id="home">
+          <Hero />
+        </section>
+
+        {/* PainSection tidak punya link di navbar, tidak perlu id wrapper */}
+        <PainSection />
+
+        {/* SolutionDemo sudah punya id="galery" di dalamnya */}
         <SolutionDemo />
+
+        {/* Features sudah punya id="fitur" di dalamnya — tidak perlu wrapper */}
         <Features />
-        <section id="harga"><Pricing /></section>
+
+        {/* Pricing sudah punya id="harga" di dalamnya — tidak perlu wrapper */}
+        <Pricing />
       </main>
       <Footer />
     </div>
@@ -39,13 +50,8 @@ export default function App() {
       }
     >
       <Routes>
-        {/* Rute Halaman Utama */}
         <Route path="/" element={<Home />} />
-
-        {/* Rute Form Order */}
         <Route path="/OrderForm" element={<OrderForm />} />
-
-        {/* Rute Privacy Policy Baru */}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Suspense>
