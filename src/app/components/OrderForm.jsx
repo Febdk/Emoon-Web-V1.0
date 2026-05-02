@@ -196,7 +196,7 @@ const OrderForm = () => {
                 />
               </div>
               <div className="group">
-                <label className="Block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 group-focus-within:text-[#3D3B8E] transition-colors flex items-center gap-2">
+                <label className="flex items-center gap-2 text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 group-focus-within:text-[#3D3B8E] transition-colors">
                   <LinkIcon size={14} /> Link Logo (Drive/Imgur/Web)
                 </label>
                 <input

@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full mb-6 border border-white/20">
               <span className="text-sm text-white font-medium">
-                Pilihan Terbaik Untuk mu!
+                Pilihan Terbaik Untukmu!
               </span>
             </div>
             <h1 className="text-3xl md:text-5xl lg:text-7xl mb-6 text-white font-bold leading-tight">
@@ -40,9 +40,9 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Stop menghabisakan waktuk{" "}
+              Stop menghabisakan waktumu{" "}
               <span className="text-[#FFD700]">
-                membalas pertanyan yang berulang-ulang
+                membalas pertanyaan yang berulang-ulang
               </span>
               , dan buat calon klien semakin yakin dengan produkmu dengan form
               yang rapi dan profesional. Tanpa coding,{" "}
@@ -129,7 +129,7 @@ export default function Hero() {
                   </h2>
                   <p className="text-[11px] text-blue-50 opacity-90 leading-relaxed">
                     ✨ Langsung konek WA admin
-                    <br />✨ Konek juga ke excle
+                    <br />✨ Konek juga ke Excle
                   </p>
                 </div>
               </div>

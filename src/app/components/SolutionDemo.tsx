@@ -14,7 +14,7 @@ export default function PortfolioGallery() {
       title: "Demo.Studio",
       category: "Studio Foto",
       image: "/assets/jasa-form-order-fstudio.avif",
-      link: "https://eformku.id/sample-boking-studio",
+      link: "https://eformku.id/sample-booking-studio",
     },
     {
       id: 2,

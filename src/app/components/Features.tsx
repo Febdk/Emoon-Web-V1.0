@@ -46,7 +46,7 @@ export default function Features() {
   return (
     <section
       id="fitur"
-      className="py-16 md:py-25 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1E293B] to-[#0F172A] relative overflow-hidden"
+      className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1E293B] to-[#0F172A] relative overflow-hidden"
     >
       {/* Background Decoration */}
       <div className="absolute inset-0">
@@ -57,7 +57,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 text-white px-4">
-            Fitur Cangih
+            Fitur Canggih
             <span className="block bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent mt-2 px-2 text-2xl md:text-3xl lg:text-4xl leading-relaxed">
               yang Bikin Hidup Founder Lebih Santai
             </span>
@@ -158,7 +158,7 @@ export default function Features() {
             </div>
             <h4 className="text-lg mb-2 text-white">Tanpa Coding</h4>
             <p className="text-gray-300 text-sm">
-              Fokus closingin klien yang lain, kamu yang urus codingannya
+              Fokus closingin klien yang lain, kami yang urus codingannya
             </p>
           </div>
           <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all hover:scale-105">

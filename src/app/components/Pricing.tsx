@@ -14,7 +14,7 @@ export default function Pricing() {
         "1 Form Order Custom (Template Basic)",
         "Auto WhatsApp Integration",
         "Custom Warna & Logo",
-        "Subdomain emoon.id/namamu",
+        "Subdomain eformku.id/namamu",
       ],
       popular: false,
       buttonColor:

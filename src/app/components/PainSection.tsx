@@ -5,19 +5,19 @@ export default function PainSection() {
     {
       icon: <Angry className="w-12 h-12 text-red-500" />,
       title: "Diskusi Panjang Lebar, Closing Kagak.",
-      description: "Capek jelasin pricelist & paket berulang kali, eh ujung-ujungnya  klien cuma nanti dikabari ya kak . Waktu terbuang sia-sia.",
+      description: "Capek jelasin pricelist & paket berulang kali, eh ujung-ujungnya klien cuma nanti dikabari ya kak. Waktu terbuang sia-sia.",
       gradient: "from-red-50 to-red-100"
     },
     {
       icon: <ClockAlert className="w-12 h-12 text-orange-500" />,
       title: "Buat calon klien kamu ribet",
-      description: "FYI sebenarnya calon klien itu mersa dipersulit loh kalau kamu kirim formulir dengan menggunakan chta WA manual, klienmu  harus copas manual data yang Admin kirim dan ngirim lagi ke Admin.",
+      description: "FYI sebenarnya calon klien itu merasa dipersulit loh kalau kamu kirim formulir dengan menggunakan chat WA manual, klienmu harus copas manual data yang Admin kirim dan ngirim lagi ke Admin.",
       gradient: "from-orange-50 to-orange-100"
     },
     {
       icon: <Frown className="w-12 h-12 text-yellow-600" />,
       title: "Klien ragu karena tampilan tidak Pro",
-      description: "Google Form? Typeform? Tampilannya gitu-gitu aja. Gak ada branding, gak profesional, customer jadi ragudeh kalaumau  order.",
+      description: "Google Form? Typeform? Tampilannya gitu-gitu aja. Gak ada branding, gak profesional, customer jadi ragudeh kalau mau  order.",
       gradient: "from-yellow-50 to-yellow-100"
     }
   ];
@@ -30,7 +30,7 @@ export default function PainSection() {
         <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#FFD700]/10 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto relative z-11">
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 text-white">
             Sering Mengalami Drama Admin Seperti Ini kan?
